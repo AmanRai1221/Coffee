@@ -1,6 +1,6 @@
 :root {
   --primary-bg: rgba(26, 15, 13, 0.85);
-  --secondary-bg: rgba(18, 10, 8, 0.4);
+  --secondary-bg: rgba(18, 10, 8, 0.15);
   --accent-brown: #4A2E2B;
   --warm-cream: #F5EBE6;
   --muted-gold: #D4A373;
@@ -79,6 +79,15 @@ h1, h2, h3 {
   font-weight: 700;
   color: var(--warm-cream);
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--muted-gold);
 }
 
 .nav-links a {
@@ -195,7 +204,7 @@ h2 {
 
 .card {
   background: var(--secondary-bg);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(6px);
   padding: 3rem 2rem;
   text-align: center;
   border: 1px solid rgba(212, 163, 115, 0.15);
@@ -207,7 +216,7 @@ h2 {
 .card:hover {
   transform: translateY(-15px) scale(1.02);
   border-color: rgba(212, 163, 115, 0.5);
-  background: rgba(26, 15, 13, 0.6);
+  background: rgba(26, 15, 13, 0.3);
   box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
@@ -247,7 +256,7 @@ h2 {
 .product-card {
   flex: 0 0 320px;
   background: var(--secondary-bg);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(6px);
   padding: 2.5rem;
   border-radius: 12px;
   text-align: center;
@@ -312,7 +321,7 @@ h2 {
   gap: 4rem;
   align-items: center;
   background: var(--secondary-bg);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(6px);
   border: 1px solid rgba(212, 163, 115, 0.15);
   border-radius: 12px;
   padding: 4rem;
@@ -345,8 +354,8 @@ h2 {
 
 /* Footer */
 footer {
-  background: rgba(18, 10, 8, 0.6);
-  backdrop-filter: blur(20px);
+  background: rgba(18, 10, 8, 0.2);
+  backdrop-filter: blur(8px);
   padding: 5rem 2rem 3rem;
   text-align: center;
   border-top: 1px solid rgba(212, 163, 115, 0.2);

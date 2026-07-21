@@ -16,7 +16,14 @@
     <div id="app">
       <!-- Navigation -->
       <nav class="navbar">
-        <div class="logo">LUXURY COFFEE</div>
+        <div class="logo hover-target">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+            <path d="M6 2v2"/><path d="M10 2v2"/><path d="M14 2v2"/>
+          </svg>
+          COFFEE
+        </div>
         <div class="nav-links">
           <a href="#process" class="hover-target">Process</a>
           <a href="#products" class="hover-target">Blends</a>
@@ -80,7 +87,7 @@
 
       <section class="origin" id="origin">
         <div class="split-screen gsap-reveal hover-target">
-          <div class="image-side"></div>
+          <div class="image-side" style="background-image: url('/origin_story.png'); background-size: cover; background-position: center;"></div>
           <div class="text-side">
             <h2 class="gradient-text">Our Origin Story</h2>
             <p>"The best coffee I have ever tasted. Period." - A Customer</p>
@@ -96,7 +103,7 @@
             <p>Our commitment to the environment is as strong as our espresso. We partner directly with eco-conscious farmers who practice shade-grown cultivation.</p>
             <p>Every bean is hand-picked, ensuring zero mechanical damage to the plants and a sustainable ecosystem for generations.</p>
           </div>
-          <div class="image-side" style="background: var(--muted-gold);"></div>
+          <div class="image-side" style="background-image: url('/earth_to_cup.png'); background-size: cover; background-position: center;"></div>
         </div>
       </section>
 
