@@ -11,10 +11,18 @@ const context = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const frameCount = 184; // ezgif-frame-001.jpg to ezgif-frame-184.jpg
-const currentFrame = index => (
-  `/frames/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`
-);
+const firstFrameCount = 270;
+const secondFrameCount = 269;
+const frameCount = firstFrameCount + secondFrameCount;
+
+const currentFrame = index => {
+  if (index < firstFrameCount) {
+    return `/first_frames/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`;
+  } else {
+    const secondIndex = index - firstFrameCount;
+    return `/second_frames/ezgif-frame-${(secondIndex + 1).toString().padStart(3, '0')}.jpg`;
+  }
+};
 
 const images = []
 const coffee = {
