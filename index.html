@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Coffee | Pure Perfection</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <div id="app">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="logo">LUXURY COFFEE</div>
+        <div class="nav-links">
+          <a href="#process" class="hover-target">Process</a>
+          <a href="#products" class="hover-target">Blends</a>
+          <a href="#origin" class="hover-target">Story</a>
+        </div>
+      </nav>
+
+      <!-- Fixed Background Canvas -->
+      <canvas id="hero-canvas"></canvas>
+
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-overlay">
+          <h1 class="hero-headline gsap-reveal">From a Single Bean to Pure Perfection.</h1>
+          <button class="cta-button hover-target gsap-reveal">Explore Our Roasts</button>
+        </div>
+      </section>
+
+      <!-- Content Sections -->
+      <section class="process" id="process">
+        <h2 class="gsap-reveal gradient-text">Our Process</h2>
+        <div class="cards-grid">
+          <div class="card gsap-reveal hover-target">
+            <h3>Sourcing</h3>
+            <p>Ethically sourced from sustainable farms across the globe.</p>
+          </div>
+          <div class="card gsap-reveal hover-target">
+            <h3>Roasting</h3>
+            <p>Masterfully roasted to unlock rich, deep flavors.</p>
+          </div>
+          <div class="card gsap-reveal hover-target">
+            <h3>Brewing</h3>
+            <p>Expertly crafted for a perfect cup every time.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <h2 class="gsap-reveal gradient-text">Featured Blends</h2>
+        <div class="carousel gsap-reveal">
+          <div class="product-card hover-target">
+            <div class="product-image dark-roast"></div>
+            <h3>Midnight Espresso</h3>
+            <p>$24.00</p>
+            <button class="add-to-cart hover-target">Add to Cart</button>
+          </div>
+          <div class="product-card hover-target">
+            <div class="product-image medium-roast"></div>
+            <h3>Amber Roast</h3>
+            <p>$22.00</p>
+            <button class="add-to-cart hover-target">Add to Cart</button>
+          </div>
+          <div class="product-card hover-target">
+            <div class="product-image light-roast"></div>
+            <h3>Sunrise Blend</h3>
+            <p>$20.00</p>
+            <button class="add-to-cart hover-target">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="origin" id="origin">
+        <div class="split-screen gsap-reveal hover-target">
+          <div class="image-side"></div>
+          <div class="text-side">
+            <h2 class="gradient-text">Our Origin Story</h2>
+            <p>"The best coffee I have ever tasted. Period." - A Customer</p>
+            <p>We believe in the power of a perfect cup. Sustainable farming meets artisan roasting.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="gsap-reveal">
+        <div class="newsletter">
+          <h3 class="gradient-text">Get Freshly Roasted News</h3>
+          <input type="email" placeholder="Your Email Address">
+          <button class="hover-target">Subscribe</button>
+        </div>
+        <div class="social-links">
+          <a href="#" class="hover-target">Instagram</a>
+          <a href="#" class="hover-target">Twitter</a>
+          <a href="#" class="hover-target">Facebook</a>
+        </div>
+        <p>&copy; 2026 Luxury Coffee. All rights reserved.</p>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
